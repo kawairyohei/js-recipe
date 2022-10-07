@@ -14,7 +14,22 @@ const hikakin = {
 
 // 練習問題
 // hikakin オブジェクトに入っている sayHello メソッドを実行してください。
+hikakin.sayhello()
 
 // [やってみよう]
 // hikakin オブジェクト を真似して自分のプロフィールをオブジェクトで作ってください。
 // オブジェクトにはたくさんのプロパティを追加してください。
+const ryohei = {
+  name: "川井涼平",
+  age: 21,
+  hobbies: ["ゲーム", "英語の勉強"],
+  isSleepy: false,
+  address: {
+    country: "日本",
+    city: "新潟",
+  },
+  sayhello: function () {
+    console.log("よろしくおねがいします")
+  },
+}
+ryohei.sayhello()
