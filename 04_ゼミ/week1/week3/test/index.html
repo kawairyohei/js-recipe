@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let list = [0, 1, 0, 1, 0, 0, 1]
+      let plainText = []
+      const toMorsecode = function () {
+        //get the list from "list" and give them to "plainText", converted to "・" and "―".
+        //refer all items in "list" by using "for" syntax.
+        for (let i = 0; i <= list.length; i++) {
+          if (list[i] === 0) {
+            plainText[i] = "・"
+          } else {
+            plainText[i] = "―"
+          }
+        }
+        //judge if each items of "list" is 0 or 1 by "if" syntax.
+        //convert all items of "list" to "・" or "―"
+        //reassign "plainText" as a list of "・"and "―".
+        return plainText
+      }
+      console.log(toMorsecode())
+    </script>
+  </body>
+</html>
